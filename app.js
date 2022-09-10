@@ -39,7 +39,7 @@ app.post("/", async (req, res) => {
   }, 2000);
 });
 
-app.listen(dotenv.parsed.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
